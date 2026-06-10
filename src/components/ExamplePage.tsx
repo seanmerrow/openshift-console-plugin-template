@@ -1,40 +1,32 @@
 import { DocumentTitle, ListPageHeader } from '@openshift-console/dynamic-plugin-sdk';
-import { Trans, useTranslation } from 'react-i18next';
-import { Content, PageSection } from '@patternfly/react-core';
-import { CheckCircleIcon } from '@patternfly/react-icons';
+import { useTranslation } from 'react-i18next';
+import { Alert, Content, PageSection } from '@patternfly/react-core';
 import type { FC } from 'react';
 
 import './example.css';
+import QuickstartCatalog from './QuickstartCatalog';
 
 const ExamplePage: FC = () => {
   const { t } = useTranslation('plugin__console-plugin-template');
 
   return (
     <>
-      <DocumentTitle>{t('Hello, plugin!')}</DocumentTitle>
-      <ListPageHeader title={t('Hello, plugin!')} />
+      <DocumentTitle>{t('Red Hat AI Quickstarts')}</DocumentTitle>
+      <ListPageHeader title={t('Red Hat AI Quickstarts')} />
       <PageSection>
         <Content component="p">
-          <span className="console-plugin-template__nice">
-            <CheckCircleIcon /> {t('Success!')}
-          </span>{' '}
-          {t('Your plugin is working.')}
+          {t(
+            'Use the the AI quickstarts below to quickly setup an environment to test our or demonstrate various AI/ML applications, tools and products from Red Hat and our ecosystem of AI partners.',
+          )}
         </Content>
-        <Content component="p">
-          <Trans t={t}>
-            This is a custom page contributed by the console plugin template. The extension that
-            adds the page is declared in console-extensions.json in the project root along with the
-            corresponding nav item. Update console-extensions.json to change or add extensions. Code
-            references in console-extensions.json must have a corresponding property{' '}
-            <code>exposedModules</code> in package.json mapping the reference to the module.
-          </Trans>
-        </Content>
-        <Content component="p">
-          <Trans t={t}>
-            After cloning this project, replace references to <code>console-template-plugin</code>{' '}
-            and other plugin metadata in package.json with values for your plugin.
-          </Trans>
-        </Content>
+        <Alert variant="danger" isInline title={t('Important Notice')}>
+          {t(
+            'These AI quickstarts are not officially supported by Red Hat support, and are only to be used for testing.',
+          )}
+        </Alert>
+      </PageSection>
+      <PageSection>
+        <QuickstartCatalog />
       </PageSection>
     </>
   );

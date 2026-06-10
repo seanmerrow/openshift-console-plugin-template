@@ -3,7 +3,7 @@
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
+      "path": "/ai-quickstarts",
       "component": { "$codeRef": "ExamplePage" }
     }
   },
@@ -11,10 +11,11 @@
     "type": "console.navigation/href",
     "properties": {
       "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin example%",
-      "href": "/example",
+      "insertAfter": "helm-releases",
+      "name": "%plugin__console-plugin-template~AI Quickstarts%",
+      "href": "/ai-quickstarts",
       "perspective": "admin",
-      "section": "home"
+      "section": "ecosystem"
     }
   }
 ]
