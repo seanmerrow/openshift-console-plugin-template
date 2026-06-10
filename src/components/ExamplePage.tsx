@@ -4,7 +4,7 @@ import { Alert, Content, PageSection } from '@patternfly/react-core';
 import type { FC } from 'react';
 
 import './example.css';
-import QuickstartCatalog from './QuickstartCatalog';
+import QuickstartsCatalog from './QuickstartsCatalog';
 
 const ExamplePage: FC = () => {
   const { t } = useTranslation('plugin__console-plugin-template');
@@ -26,7 +26,7 @@ const ExamplePage: FC = () => {
         </Alert>
       </PageSection>
       <PageSection>
-        <QuickstartCatalog />
+        <QuickstartsCatalog />
       </PageSection>
     </>
   );
