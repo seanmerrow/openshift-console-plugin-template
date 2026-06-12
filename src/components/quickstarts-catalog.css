@@ -1,5 +1,15 @@
-.quickstarts-catalog__gallery {
-  margin-top: var(--pf-v6-global--spacer--md);
+.quickstarts-catalog__container {
+  display: flex;
+  gap: var(--pf-v6-global--spacer--lg);
+}
+
+.quickstarts-catalog__content {
+  flex: 1;
+}
+
+.quickstarts-catalog__search {
+  margin-bottom: var(--pf-v6-global--spacer--lg);
+  max-width: 400px;
 }
 
 .quickstarts-catalog__badge {
@@ -11,4 +21,10 @@
   border-radius: var(--pf-v6-global--BorderRadius--sm);
   font-size: var(--pf-v6-global--FontSize--xs);
   font-weight: var(--pf-v6-global--FontWeight--semi-bold);
+}
+
+.quickstarts-catalog__redhat-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }

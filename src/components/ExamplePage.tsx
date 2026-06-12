@@ -25,9 +25,7 @@ const ExamplePage: FC = () => {
           )}
         </Alert>
       </PageSection>
-      <PageSection>
-        <QuickstartsCatalog />
-      </PageSection>
+      <QuickstartsCatalog />
     </>
   );
 };

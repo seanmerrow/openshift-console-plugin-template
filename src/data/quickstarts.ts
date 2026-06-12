@@ -6,6 +6,7 @@ export interface Quickstart {
   featured: boolean;
   badges?: string[];
   githubPath: string;
+  categories: string[];
 }
 
 export const quickstarts: Quickstart[] = [
@@ -18,6 +19,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['LLM', 'Vector DB'],
     githubPath: 'RAG',
+    categories: ['RAG'],
   },
   {
     id: 'ai-virtual-agent',
@@ -28,6 +30,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Agent', 'Automation'],
     githubPath: 'ai-virtual-agent',
+    categories: ['Use-Case'],
   },
   {
     id: 'aml-rag-nvidia',
@@ -37,6 +40,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['NVIDIA', 'GPU', 'RAG'],
     githubPath: 'aml-rag-nvidia',
+    categories: ['RAG', 'Partners'],
   },
   {
     id: 'ansible-log-analysis',
@@ -46,6 +50,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Ansible', 'Observability'],
     githubPath: 'ansible-log-analysis',
+    categories: ['Observability'],
   },
   {
     id: 'data-governance-co-pilot',
@@ -56,6 +61,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Governance', 'Compliance'],
     githubPath: 'data-governance-co-pilot',
+    categories: ['Governance'],
   },
   {
     id: 'f5-ai-guardrails',
@@ -65,6 +71,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['F5', 'Security', 'Guardrails'],
     githubPath: 'f5-ai-guardrails',
+    categories: ['Safety', 'Partners'],
   },
   {
     id: 'f5-api-security',
@@ -75,6 +82,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['F5', 'API', 'Security'],
     githubPath: 'f5-api-security',
+    categories: ['Safety', 'Partners'],
   },
   {
     id: 'guardrailing-llms',
@@ -84,6 +92,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['LLM', 'Safety', 'Ethics'],
     githubPath: 'guardrailing-llms',
+    categories: ['Safety'],
   },
   {
     id: 'it-self-service-agent',
@@ -93,6 +102,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Agent', 'IT Support'],
     githubPath: 'it-self-service-agent',
+    categories: ['Use-Case'],
   },
   {
     id: 'lemonade-stand-assistant',
@@ -103,6 +113,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Demo', 'Business'],
     githubPath: 'lemonade-stand-assistant',
+    categories: ['Use-Case'],
   },
   {
     id: 'llm-cpu-serving',
@@ -112,6 +123,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['LLM', 'Inference', 'CPU'],
     githubPath: 'llm-cpu-serving',
+    categories: ['Use-Case'],
   },
   {
     id: 'lls-observability',
@@ -122,6 +134,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Observability', 'Monitoring'],
     githubPath: 'lls-observability',
+    categories: ['Observability'],
   },
   {
     id: 'maas-code-assistant',
@@ -131,6 +144,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Coding', 'MaaS'],
     githubPath: 'maas-code-assistant',
+    categories: ['Use-Case'],
   },
   {
     id: 'multi-agent-loan-origination',
@@ -140,6 +154,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Multi-Agent', 'Finance'],
     githubPath: 'multi-agent-loan-origination',
+    categories: ['Use-Case'],
   },
   {
     id: 'openshift-ai-observability-summarizer',
@@ -150,6 +165,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['OpenShift', 'Observability'],
     githubPath: 'openshift-ai-observability-summarizer',
+    categories: ['Observability'],
   },
   {
     id: 'product-recommender-system',
@@ -159,6 +175,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['ML', 'E-commerce'],
     githubPath: 'product-recommender-system',
+    categories: ['Use-Case'],
   },
   {
     id: 'rh-research',
@@ -168,6 +185,7 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Research', 'Experimental'],
     githubPath: 'rh-research',
+    categories: ['Use-Case'],
   },
   {
     id: 'spending-transaction-monitor',
@@ -177,5 +195,6 @@ export const quickstarts: Quickstart[] = [
     featured: false,
     badges: ['Finance', 'Analytics'],
     githubPath: 'spending-transaction-monitor',
+    categories: ['Use-Case'],
   },
 ];
