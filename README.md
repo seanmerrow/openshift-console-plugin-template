@@ -25,7 +25,7 @@ Change to the charts directory
 ```
 cd ai-quickstart-catalog-plugin/charts
 ```
-Install the plugin
+Install the plugin. You can specify the name of the namespace to install in to. If the namespace doesn't already exist, be sure to add the `--create-namespace` flag.
 ```
 helm upgrade -i  ai-quickstart-catalog-plugin ./ai-quickstart-catalog-plugin -n ai-quickstart-catalog-plugin --create-namespace
 ```
