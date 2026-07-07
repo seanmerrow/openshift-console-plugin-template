@@ -35,7 +35,7 @@ export const quickstarts: Quickstart[] = [
   {
     id: 'aml-rag-nvidia',
     title: 'AML RAG with NVIDIA',
-    vendor: 'Red Hat & NVIDIA',
+    vendor: 'NVIDIA',
     description: 'Advanced machine learning RAG implementation leveraging NVIDIA GPU acceleration.',
     featured: false,
     badges: ['NVIDIA', 'GPU', 'RAG'],

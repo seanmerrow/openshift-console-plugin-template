@@ -8,7 +8,9 @@ import {
 import { Gallery, PageSection, SearchInput } from '@patternfly/react-core';
 import { CubeIcon } from '@patternfly/react-icons';
 import { quickstarts } from '../data/quickstarts';
-import redhatIcon from '../assets/redhat-icon.png';
+import redhatIcon from '../assets/redhat-logo.png';
+import nvidiaIcon from '../assets/nvidia-logo.png';
+import f5Icon from '../assets/f5-logo.png';
 
 import './quickstarts-catalog.css';
 
@@ -30,7 +32,7 @@ const QuickstartsCatalog: FC = () => {
     const quickstart = quickstarts.find((qs) => qs.id === quickstartId);
     if (quickstart) {
       window.open(
-        `https://github.com/rh-ai-quickstart/ai-quickstart-pub/tree/main/quickstart/${quickstart.githubPath}`,
+        `https://docs.redhat.com/en/learn/ai-quickstarts/rh-${quickstart.githubPath}`,
         '_blank',
       );
     }
@@ -88,8 +90,17 @@ const QuickstartsCatalog: FC = () => {
     return quickstarts.filter((qs) => qs.categories.includes(category)).length;
   };
 
-  const isRedHatOnly = (vendor: string) => {
-    return vendor === 'Red Hat';
+  const getVendorIcon = (vendor: string) => {
+    switch (vendor.toLowerCase()) {
+      case 'red hat':
+        return <img src={redhatIcon} alt="Red Hat" className="quickstarts-catalog__vendor-icon"/>;
+      case 'nvidia':
+        return <img src={nvidiaIcon} alt="NVIDIA" className="quickstarts-catalog__vendor-icon" />;
+      case 'f5':
+        return <img src={f5Icon} alt="F5" className="quickstarts-catalog__vendor-icon" />;
+      default:
+        return <CubeIcon />;
+    }
   };
 
   return (
@@ -129,17 +140,7 @@ const QuickstartsCatalog: FC = () => {
               description={quickstart.description}
               featured={quickstart.featured}
               href={`https://github.com/rh-ai-quickstart/ai-quickstart-pub/tree/main/quickstart/${quickstart.githubPath}`}
-              icon={
-                isRedHatOnly(quickstart.vendor) ? (
-                  <img
-                    src={redhatIcon}
-                    alt="Red Hat"
-                    className="quickstarts-catalog__redhat-icon"
-                  />
-                ) : (
-                  <CubeIcon />
-                )
-              }
+              icon={getVendorIcon(quickstart.vendor)}
               onClick={() => {
                 handleTileClick(quickstart.id);
               }}
