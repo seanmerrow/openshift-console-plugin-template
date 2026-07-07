@@ -1,0 +1,5 @@
+apiVersion: v2
+name: ai-quickstart-catalog-plugin
+description: A Helm chart to enable the AI quickstart catalog in the OpenShift web console
+type: application
+version: 0.7.0

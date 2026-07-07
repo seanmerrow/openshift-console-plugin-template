@@ -2627,6 +2627,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@patternfly/react-catalog-view-extension@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@patternfly/react-catalog-view-extension@npm:6.4.0"
+  dependencies:
+    "@patternfly/react-core": "npm:^6.1.0"
+    "@patternfly/react-styles": "npm:^6.1.0"
+  peerDependencies:
+    react: ^17 || ^18 || ^19
+    react-dom: ^17 || ^18 || ^19
+  checksum: 10c0/bda8b886f1a3747ae7c98897c3d17ec662d4617fdb5a9e7e2da653e731d377564901ec95b1c436eeaf95fe70f0dfacc2327ee35f6e62fd3fde162acf00b41977
+  languageName: node
+  linkType: hard
+
+"@patternfly/react-core@npm:^6.1.0":
+  version: 6.5.1
+  resolution: "@patternfly/react-core@npm:6.5.1"
+  dependencies:
+    "@patternfly/react-icons": "npm:^6.5.1"
+    "@patternfly/react-styles": "npm:^6.5.1"
+    "@patternfly/react-tokens": "npm:^6.5.1"
+    focus-trap: "npm:7.6.6"
+    react-dropzone: "npm:^14.3.5"
+    tslib: "npm:^2.8.1"
+  peerDependencies:
+    react: ^17 || ^18 || ^19
+    react-dom: ^17 || ^18 || ^19
+  checksum: 10c0/a19cb6e7e286618b62883f0e15876563df8c3b64e5246b9253de40ee7c84b230cb344694a55641dca6a6dd087d331ab05bd0a7554fe160b5c8a1d52c10713ac6
+  languageName: node
+  linkType: hard
+
 "@patternfly/react-core@npm:^6.4.3":
   version: 6.4.3
   resolution: "@patternfly/react-core@npm:6.4.3"
@@ -2651,6 +2681,23 @@ __metadata:
     react: ^17 || ^18 || ^19
     react-dom: ^17 || ^18 || ^19
   checksum: 10c0/2072babe83bad4de05e71b27c1180886912c99f24de8e5358cad06e9410a9643171b5dcda69d7e5c36f1010a2457ec9fdbb89cc9d54d92e63ede82de12c543cb
+  languageName: node
+  linkType: hard
+
+"@patternfly/react-icons@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@patternfly/react-icons@npm:6.5.1"
+  peerDependencies:
+    react: ^17 || ^18 || ^19
+    react-dom: ^17 || ^18 || ^19
+  checksum: 10c0/32af8ca4be0fad74a056aec5bcd4f4748166a35016de958758041e6afa21dd65fb7349dd22ea78c92fe7a150c1433d08b4a59f5851d162695f6a05cc99a53a45
+  languageName: node
+  linkType: hard
+
+"@patternfly/react-styles@npm:^6.1.0, @patternfly/react-styles@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@patternfly/react-styles@npm:6.5.1"
+  checksum: 10c0/34590666ba21e2b0116316ade4572ec3436686cbfde32096dd838ea64c710016f835ee94da8deb5a8cd0bc9fefef9b9669e08d958411fcef428720a50782dbb4
   languageName: node
   linkType: hard
 
@@ -2682,6 +2729,13 @@ __metadata:
   version: 6.4.0
   resolution: "@patternfly/react-tokens@npm:6.4.0"
   checksum: 10c0/9b49ac8f1703de0e5b2b6d1154dbf83dbb40eea2850ce1f50ac173cd3d2cc9d4a1ca085c7c3db2a538aa6c137db186cbe783f1ab5985e843dfd455e9095f1a93
+  languageName: node
+  linkType: hard
+
+"@patternfly/react-tokens@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@patternfly/react-tokens@npm:6.5.1"
+  checksum: 10c0/3d38d92550d61cd34eea9c7b530b826af31cb929c1da28fd7f0649df12e40753ffdd5655a1ac2cf537d79866f635fcb71562e5ce3f55c32c81986a1f03b07cc2
   languageName: node
   linkType: hard
 
@@ -5584,6 +5638,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.29.3"
     "@openshift-console/dynamic-plugin-sdk": "npm:4.22-latest"
     "@openshift-console/dynamic-plugin-sdk-webpack": "npm:4.22-latest"
+    "@patternfly/react-catalog-view-extension": "npm:^6.4.0"
     "@patternfly/react-core": "npm:^6.4.3"
     "@patternfly/react-icons": "npm:^6.4.0"
     "@patternfly/react-table": "npm:^6.4.3"
@@ -7517,6 +7572,15 @@ __metadata:
   dependencies:
     tabbable: "npm:^6.2.0"
   checksum: 10c0/ed810d47fd904a5e0269e822d98e634c6cbdd7222046c712ef299bdd26a422db754e3cec04e6517065b12be4b47f65c21f6244e0c07a308b1060985463d518cb
+  languageName: node
+  linkType: hard
+
+"focus-trap@npm:7.6.6":
+  version: 7.6.6
+  resolution: "focus-trap@npm:7.6.6"
+  dependencies:
+    tabbable: "npm:^6.3.0"
+  checksum: 10c0/61ccb0c4d990a03dfbb0878ff3f79cadfb84e36f39bb138fbf4ae88edbfecd42d0f02152f928c338185324cf4cde307c8d4889b6bf19876e4bfc84ea29f40bee
   languageName: node
   linkType: hard
 
@@ -14658,7 +14722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tabbable@npm:^6.2.0":
+"tabbable@npm:^6.2.0, tabbable@npm:^6.3.0":
   version: 6.4.0
   resolution: "tabbable@npm:6.4.0"
   checksum: 10c0/d931427f4a96b801fd8801ba296a702119e06f70ad262fed8abc5271225c9f1ca51b89fdec4fb2f22e1d35acb3d2881db0a17cedc758272e9ecb540d00299d76
