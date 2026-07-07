@@ -38,5 +38,8 @@ AI quickstarts that will be displayed are all in the `./src/data/quickstarts.ts`
 ### Partner logos
 Partner logos, used as icons in the catalog, are stored in the `./src/assets` folder.
 
+### Update the image
+A new plugin image will need to be created after modifying any of the files. Once the new image is created, it will need to be uploaded to a registry that is accessible by the OpenShift cluster.
+
 ### Plugin image
-The plugin image is set in the `./charts/ai-quickstart-catalog-plugin/values.yanml` file.
+The plugin image location is set in the `./charts/ai-quickstart-catalog-plugin/values.yanml` file.
