@@ -2,7 +2,7 @@
 An OpenShift dynamic web plugin to enable the AI quickstart catalog page
 
 ## Requiremeents
-* OpenShift 4.22
+* Access to an OpenShift cluster with a version that aligns with one of the branch names
 * `cluster-admin` permissions on the cluster
 
 ## Installation
