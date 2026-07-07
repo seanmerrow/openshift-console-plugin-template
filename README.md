@@ -2,7 +2,7 @@
 An OpenShift dynamic web plugin to enable the AI quickstart catalog page
 
 ## Requiremeents
-* OpenShift 4.22
+* Access to an OpenShift cluster with a version that aligns with one of the branch names
 * `cluster-admin` permissions on the cluster
 
 ## Installation
@@ -25,7 +25,7 @@ Change to the charts directory
 ```
 cd ai-quickstart-catalog-plugin/charts
 ```
-Install the plugin
+Install the plugin. You can specify the name of the namespace to install in to. If the namespace doesn't already exist, be sure to add the --create-namespace flag.
 ```
 helm upgrade -i  ai-quickstart-catalog-plugin ./ai-quickstart-catalog-plugin -n ai-quickstart-catalog-plugin --create-namespace
 ```
