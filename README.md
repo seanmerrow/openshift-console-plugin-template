@@ -6,20 +6,16 @@ An OpenShift dynamic web plugin to enable the AI quickstart catalog page
 * `cluster-admin` permissions on the cluster
 
 ## Installation
-There are two ways to install this plugin into your cluster, both requiring Helm
+
+> [!WARNING]
+> After installation, there may be a brief delay while the plugin comes up and enables the new menu
 
 ### Cluster login
 Before starting, be sure to use `oc login` to log in to your cluster with `cluster-admin` permissions.
 ```
 oc login --token=sha256~Nf5vt....Lp9kHkxCnlECN7fw --server=https://api.crc.testing:6443
 ```
-### Install from the .tgz Helm chart
-Download the `ai-quickstart-catalog-plugin-x.y.z.tgz` file from the `charts` folder in this repo.
 
-Use Helm to install the chart. You must name the namespace in to which to install, and optionally create it while doing so.
-```
-helm install ai-quickstart-catalog-plugin ./ai-quickstart-catalog-plugin-0.7.0.tgz --namespace ai-quickstart-catalog-plugin --create-namespace
-```
 ### Install from the cloned repo
 Clone this repo
 ```
