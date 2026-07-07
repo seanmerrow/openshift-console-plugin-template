@@ -2,7 +2,7 @@
 plugin:
   name: "ai-quickstart-catalog-plugin"
   description: "AI quickstart catalog UI"
-  image: "quay.io/seanmerrow/ai-quickstart-catalog-plugin:latest"
+  image: "quay.io/seanmerrow/ai-quickstart-catalog-plugin:0.7"
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   replicas: 1
