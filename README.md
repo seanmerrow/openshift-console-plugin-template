@@ -17,9 +17,9 @@ oc login --token=sha256~Nf5vt....Lp9kHkxCnlECN7fw --server=https://api.crc.testi
 ```
 
 ### Install from the cloned repo
-Clone this repo
+Clone this repo, using the branch for your release of OpenShift
 ```
-git clone https://github.com/seanmerrow/ai-quickstart-catalog-plugin.git
+git clone https://github.com/seanmerrow/ai-quickstart-catalog-plugin.git -b release-4.22
 ```
 Change to the charts directory
 ```
