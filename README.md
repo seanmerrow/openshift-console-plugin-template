@@ -14,7 +14,7 @@ Before starting, be sure to use `oc login` to log in to your cluster with `clust
 oc login --token=sha256~Nf5vt....Lp9kHkxCnlECN7fw --server=https://api.crc.testing:6443
 ```
 ### Install from the .tgz Helm chart
-Download the `ai-quickstart-catalog-plugin-x.y.z.tgz` file from this repo
+Download the `ai-quickstart-catalog-plugin-x.y.z.tgz` file from the `charts` folder in this repo.
 
 Use Helm to install the chart. You must name the namespace in to which to install, and optionally create it while doing so.
 ```
